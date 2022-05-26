@@ -8,20 +8,95 @@
 Альтернативные способы выделения и курсива нужны, чтобы мы могли совмещать выделения несколькими стилями одновременно.
 Например, курсивом и полужирным __*Вот так*__
 
+Программный код
+Элементы кода могут быть внутри строки (inline) либо многострочными блоками.
+
+Внутри строки код выделяется символом "`" (обратный апостроф).
+
+Пример кода внутри строки (inline) `Hello world!`
+Многострочный блок кода обозначается отступом из 4 пробелов или одного Tab.
+
+Ниже начинается многострочный блок кода
+
+    <!doctype html>
+    <html>
+        <head>
+            <!-- Заголовок документа -->
+        </head>
+        <body>
+            <!-- Тело документа -->
+        </body>
+    </html>
+
+Блок кода завершился
+
+# Заголовок первого уровня
+...
+### Заголовок третьего уровня
+...
+###### Заголовок шестого уровня
+
 ## Списки
 
-## Работа с изображениями
+* (*)элемент маркированного списка
+- (-) ещё один элемент ненумерованного списка
++ (+)буллеты элементов могут быть разными
 
+1. Элемент нумерованного списка
+2. Элемент №2 того же списка
+9. Стоит (9.). Элемент №3 списка — элементы нумеруются по порядку, цифра в начале строки не имеет значения
+
+## Работа с изображениями
+![Alt-текст](http://example.com/ "Заголовок изображения")
 Чтобы вставить картинку - надо написать ![respect my authoritai!](/Neteftelka.jpeg)
 
 ## Ссылки
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Где-то среди текста встречается [текст ссылки][example].
+
+Также ссылка повторяется [пример адреса][example].
+
+Ссылка на [второй][foo] также [Bar][] ресурсы.
+
+[example]: http://example.com/ "Необязательный заголовок ссылки"
+[foo]: http://example.net/ 'Необязательный заголовок ссылки'
+[bar]: http://example.edu/ (Необязательный заголовок ссылки)
 
 ## Работа с таблицами
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Column | Column
+------ | ------
+Cell   | Cell  
+
+Column | Column | Column
+:----- | :----: | -----:
+Left   | Center | Right
+align  | align  | align
+
 
 ## Цитаты
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+>Это пример цитаты,
+>в которой перед каждой строкой
+>ставится угловая скобка.
+
+>Это пример цитаты,
+в которой угловая скобка
+ставится только перед началом нового параграфа.
+>Второй параграф.
+
+> Первый уровень цитирования
+>> Второй уровень цитирования
+>>> Третий уровень цитирования
+>
+>Первый уровень цитирования
 
 ## Заключение
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.s
+Официальное руководство по синтаксису Markdown мне кажется слишком длинным и не слишком наглядным, поэтому я составил краткое руководство, которое поможет выучить или повторить синтаксис Маркдауна за час.
+
+Кроме традиционного Маркдауна у разработчиков получил распространение дополненный и улучшеный вариант языка — Github Flavoured Markdown, сокращенно GFM.
+
+Основные отличия GFM и чистого Маркдауна:
+
+добавили таблицы, которых не было в оригинальном Маркдауне;
+добавили альтернативный синтаксис для вставки блоков кода: теперь можно не ставить 4 пробела перед каждой строкой кода, также можно явно указать язык кода;
+добавили зачеркнутый текст.
+Полный список отличий на Гитхабе.
+https://docs.github.com/en/get-started/writing-on-github
